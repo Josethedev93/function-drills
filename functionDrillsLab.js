@@ -11,8 +11,11 @@
   Call the function.
 */
 
-//CODE HERE
+function helloWorld() {
+  console.log('hello world!')
+}
 
+ helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -20,7 +23,8 @@
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+const jsNinja = () => 'i am a javascrpit ninja!' 
+
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -30,8 +34,13 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name) {
+  console.log(name)
+}
 
+printName('Cameron')
+
+printName('Lord Hernandez')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -43,8 +52,13 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name){
+  name = String(name)
+  console.log(`hello, ${name}`)
+}
 
+
+greeting('Lord Hernandez')
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -78,7 +92,7 @@
   Uncomment the correct `console.log` underneath.
 */
 
-const exclaim = function(str) {
+function exclaim(str) {
   return str.toUpperCase() + '!!!'
 }
 
