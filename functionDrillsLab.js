@@ -71,7 +71,14 @@ greeting('Lord Hernandez')
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -83,7 +90,15 @@ greeting('Lord Hernandez')
 */
 
 //CODE HERE
+function add(num, num2) {
+  num = +num
+  num2 = +num2
+  return num + num2
+}
 
+let sum = add(15, 23)
+
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -98,7 +113,7 @@ function exclaim(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -113,18 +128,17 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
 /*
   Rewrite exclaimTwo to be a single line.
   Call your new function exclaimThree
-
   Brownie points if you use a template string
 */
-
-
+const exclaimThree = str => `${str.toUpperCase()}!!!`
+// ***took me a bit of time here because im having a little diffculty understanding template literals still.***
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -138,7 +152,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -152,7 +166,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
+let nameGreeting = nameCheck('Steven')
+
+console.log(nameGreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -165,7 +191,23 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "red is a great color"
+  } else if (color === "green") {
+    return "green is a solid favorite color"
+  } else if (color === "black") {
+    return "so trendy"
+  } else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
 
+// let colorRating = faveColorFinder('black')
+// let colorRating = faveColorFinder('green')
+let colorRating = faveColorFinder('turquoise')
+
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -177,6 +219,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+
+function printAllNames(names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(names[i])
+  }
+}
+
+printAllNames(namesArr)
+
+console.log(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
