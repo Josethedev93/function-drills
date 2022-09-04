@@ -60,6 +60,8 @@ function greeting(name){
 
 greeting('Lord Hernandez')
 
+// Good job on these problems, and the correct uses of the backtick.  et me know if you need help with the problems.  If you have the rest of them done on your local machine and want me to review them let me know.
+
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
