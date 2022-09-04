@@ -239,7 +239,17 @@ console.log(namesArr)
 */
 
 //CODE HERE
+function thatsOdd(num) {
+if (num % 2 === 0) {
+  return "That's not odd!"
+} else {
+  return "That is odd indeed!"
+}
+}
 
+let oddChecker = thatsOdd(5)
+
+console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -253,9 +263,15 @@ console.log(namesArr)
 
 //CODE HERE
 
+const bestMovie = title => {
+  return title + 'is the best movie ever!'
+}
+// **** could not figure this one out, 
+// im having trouble with understanding where to put sharknado and invoke it into title. or maybe im just sleepy***
 
 ////////////////// PROBLEM 15 ////////////////////
-let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
+
+
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr',  which will be an array of numbers. 
   Inside of the bigOrSmall function, create a new array called 'answers'. 
@@ -266,6 +282,24 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+
+let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
+
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big")
+    } else {
+      answers.push("small")
+    }
+  }
+  return answers
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+
+console.log(arrayEvaluator)
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -278,6 +312,19 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
+function theEliminator(contestants, loser) {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1)
+    }
+  }
+  return contestants
+}
+
+let updatedContestants = theEliminator(contestants, loser)
+
+console.log(updatedContestants)
+
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -287,6 +334,15 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+
+
+function makeUppercase(str) {
+  console.log(str.toUpperCase())
+}
+
+makeUppercase(sampleString)
+
+console.log(sampleString)
 
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -299,6 +355,38 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+// let email = 'Hernandezj5026@gmail.com'
+
+// function emailCheck(email) {
+//   email = String(email).trim()
+
+//   if (email.includes('@')) {
+//     return 'email verified'
+//   } else {
+//     return 'must provide a valid email address'
+//   }
+// }
+
+// console.log(emailCheck(email))
+
+let email = 'Hernandezj5026gmail.com'
+
+function emailCheck(email) {
+  email = String(email).trim()
+
+  if (email.includes('@')) {
+    return 'email verified'
+  } else {
+    return 'must provide a valid email address'
+  }
+}
+
+console.log(emailCheck(email))
+
+
+
+
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
